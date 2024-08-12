@@ -1,8 +1,25 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
 
+interface Customer {
+  name: string;
+  phone: string;
+  email: string;
+}
+
+interface OrderItem {
+  name: string;
+  quantity: number;
+  price: number;
+}
+
+interface Order {
+  customer: Customer;
+  items: OrderItem[];
+}
+
 export const useOrderStore = defineStore('order', () => {
-  const orders = ref([
+  const orders = ref<Order[]>([
     {
       customer: {
         name: '老王',
@@ -27,13 +44,15 @@ export const useOrderStore = defineStore('order', () => {
     },
   ]); 
 
-  function saveOrder(order) {
+  function saveOrder(order: Order) {
     orders.value.push(order); 
   }
-  function removeOrder(index) {
+
+  function removeOrder(index: number) {
     orders.value.splice(index, 1); 
   }
-  return { orders, saveOrder, removeOrder};
+
+  return { orders, saveOrder, removeOrder };
 }, {
-    persist: true 
-  });
+  persist: true 
+});

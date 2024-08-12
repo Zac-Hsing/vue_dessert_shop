@@ -11,7 +11,7 @@ import orderList from '@/components/admin/page/orderList.vue'
 import commodity from '@/components/admin/page/commodity.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/vue_dessert_shop/'),
   routes: [
     {
       path:'/',

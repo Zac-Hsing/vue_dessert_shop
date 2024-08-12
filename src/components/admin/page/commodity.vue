@@ -84,13 +84,13 @@ const isEditing = ref(false);
 
 // 用來綁定輸入的新商品或編輯中的商品資料
 const newProduct = ref({
-  id: '',
+  id: 0,
   name: '',
-  price: '',
+  price: 0,
   category: 'CheeseCake', 
   description: '', 
   quantity: 1,
-  image: fruitetower 
+  image: fruitetower
 });
 
 function addProduct() {
@@ -106,7 +106,7 @@ function update() {
   if (newProduct.value.id && newProduct.value.name && newProduct.value.price && newProduct.value.category && newProduct.value.description) {
     if (isEditing.value) {
       // 修改現有商品
-      const index = products.findIndex((product: { id: string; }) => product.id === newProduct.value.id);
+      const index = products.findIndex((product: { id: number; }) => product.id === newProduct.value.id);
       if (index !== -1) {
         products[index] = { ...newProduct.value };
       }
@@ -124,9 +124,9 @@ function update() {
 
 function resetNewProduct() {
   newProduct.value = {
-    id: '',
+    id: 0,
     name: '',
-    price: '',
+    price: 0,
     category: 'CheeseCake',
     description: '',
     quantity: 1,

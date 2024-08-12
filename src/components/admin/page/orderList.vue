@@ -31,10 +31,9 @@
 <script setup lang="ts">
   import { ref, computed,watch } from 'vue';
   import { useOrderStore } from '@/stores/order'; 
-  import { Order } from '@/types/order';
   
   const orderStore = useOrderStore();
-const orders = computed<Order[]>(() => orderStore.orders);
+const orders = computed(() => orderStore.orders);
 
 
 const expanded = ref<boolean[]>([]);

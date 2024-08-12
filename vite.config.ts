@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 
 export default defineConfig({
-/*   base: '/vue_dessert_shop/', */
+  base: './', 
   plugins: [
     vue(),
   ],
