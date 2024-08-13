@@ -29,7 +29,7 @@ const router = useRouter()
 
 const login = async () => {
     try {
-        const response = await axios.post('http://localhost:3000/api/login', form.value)
+        const response = await axios.post('https://your-vercel-app.vercel.app/api/login', form.value)
         console.log('後端回應:', response.data)
         if (response.data.success) {
             console.log('登入成功')
