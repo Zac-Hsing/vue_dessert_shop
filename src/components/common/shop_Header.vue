@@ -20,9 +20,9 @@
         </li>
         <li><a href="#"  id="dessert"   @click="scroll">甜點</a></li>
       </ul>
-      <a href="/cart"  id="cart">
+      <router-link to="/cart" id="cart">
         <img class="shopicon" src="../img/shopicon.png" alt="Shop Icon">
-      </a>
+      </router-link>
     </div>
   </div>
 </div>   
