@@ -7,10 +7,14 @@ const PORT = process.env.PORT || 3000
 
 const corsOptions = {
     origin: 'https://zac-hsing.github.io',
-    optionsSuccessStatus: 200
+    optionsSuccessStatus: 200,
+    credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
   };
   
-app.use(cors(corsOptions));
+  app.use(cors(corsOptions));
+  
 
 app.use(bodyParser.json())
 
