@@ -5,9 +5,12 @@ const cors = require('cors')
 const app = express()
 const PORT = process.env.PORT || 3000
 
-
-app.use(cors())
-
+const corsOptions = {
+    origin: 'https://zac-hsing.github.io',
+    optionsSuccessStatus: 200
+  };
+  
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json())
 

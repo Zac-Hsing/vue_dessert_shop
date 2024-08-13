@@ -2,9 +2,9 @@
   <div class="header" id="header">
     <div class="container">
       <div class="logo">
-        <a href="/">
+        <router-link to="/" >
           <img src="../img/logo.png"  alt="Logo">  
-        </a>
+        </router-link>
     </div>
     <div class="navbar">
       <ul>
