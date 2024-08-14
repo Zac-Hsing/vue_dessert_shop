@@ -18,29 +18,43 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import axios from 'axios'
-
+const User = {
+  username: 'admin',
+  password: '1234'
+};
 const form = ref({
     username: '',
     password: ''
 })
-
 const router = useRouter() 
-
 const login = async () => {
-    try {
-        const response = await axios.post('https://vue-dessert-shop.vercel.app/api/login', form.value)
-        console.log('後端回應:', response.data)
-        if (response.data.success) {
-            console.log('登入成功')
-            router.push('/admin') 
-        } else {
-            console.log('登入失敗:', response.data.message)
-        }
-    } catch (error) {
-        console.error('發生錯誤:', error)
+  try {
+    if (form.value.username === User.username && form.value.password === User.password) {
+      const response = {
+        data: {
+          success: true,
+          message: '登入成功',
+        },
+      };
+      console.log('後端回應:', response.data);
+      if (response.data.success) {
+        console.log('登入成功');
+        router.push('/admin');
+      }
+    } else {
+      const response = {
+        data: {
+          success: false,
+          message: '帳號或密碼錯誤',
+        },
+      };
+      console.log('登入失敗:', response.data.message);
     }
-}
+  } catch (error) {
+    console.log('發生錯誤:', error);
+  }
+};
+
 </script>
 
 <style scoped>
