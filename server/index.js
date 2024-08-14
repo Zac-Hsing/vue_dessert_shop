@@ -8,7 +8,7 @@ app.get('/api/login', (req, res) => {
     res.send('伺服器正在運行');
 });
 const corsOptions = {
-    origin: 'https://zac-hsing.github.io',
+    origin: '*',
     optionsSuccessStatus: 200,
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
