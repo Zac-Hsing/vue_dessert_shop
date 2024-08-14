@@ -13,9 +13,16 @@ const corsOptions = {
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
-  };
+};
+const path_to_docs = path.join(__dirname, '..', 'docs');
+app.use(express.static(path_to_docs));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(path_to_docs, 'index.html'));
+});
+
   
-  app.use(cors(corsOptions));
+app.use(cors(corsOptions));
   
 
 app.use(bodyParser.json())
