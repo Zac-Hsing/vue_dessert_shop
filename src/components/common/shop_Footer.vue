@@ -31,10 +31,12 @@
   }
 
   .footer-contain {
-    width: 1160px;
+    width: 100%; 
+    max-width: 1160px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px; 
   }
 
   .footer-left img {
@@ -56,4 +58,27 @@
   .footer-right ul li a:hover {
     text-decoration: underline; 
   }
+
+
+  @media (max-width: 1000px) {
+   .footer {
+      padding: 20px; /* 減少 padding 避免在小螢幕上占用過多空間 */
+    }
+
+    .footer-contain {
+      flex-direction: column; /* 調整為垂直排列 */
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+      margin-bottom: 10px;
+    }
+
+    .footer-right ul li {
+      margin: 5px 0;
+    }
+  }
+  
 </style>

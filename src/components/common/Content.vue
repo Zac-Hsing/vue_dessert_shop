@@ -19,4 +19,20 @@ import Dessert from './Dessert.vue';
   display: flex;
   justify-content: space-between;
 }
+
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column; 
+    width: 100%; 
+    padding: 0 20px;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .content > * {
+    width: 100%; 
+    max-width: 1160px; 
+    margin-bottom: 20px; 
+  }
+}
 </style>

@@ -14,11 +14,11 @@
             </router-link>
         </li>
         <li>
-          <router-link to="/" id="home">
+          <router-link to="/" id="home" class="hide">
             首頁
           </router-link>
         </li>
-        <li><a href="#"  id="dessert"   @click="scroll">甜點</a></li>
+        <li><a href="#"  id="dessert"  class="hide"  @click="scroll">甜點</a></li>
       </ul>
       <router-link to="/cart" id="cart">
         <img class="shopicon" src="../img/shopicon.png" alt="Shop Icon">
@@ -78,5 +78,26 @@ function scroll() {
   cursor: pointer; 
 }
 
+@media (max-width: 1000px) {
+  .header {
+    width: 100%;
+    padding: 10px;
+  }
 
+  .hide {
+    display: none; 
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .shopicon {
+    width: 30px; 
+  }
+
+  .logo img {
+    height: 30px; 
+  }
+}
 </style>

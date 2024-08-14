@@ -12,7 +12,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="home">
         <shop_Header @scroll="scroll"/>
         <Banner/>
         <Content />
@@ -20,3 +20,11 @@
         <ScrollTOTop/>
     </div>
 </template>
+
+<style >
+@media (max-width: 900px) {
+  
+}
+  
+
+</style>

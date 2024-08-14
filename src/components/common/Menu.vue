@@ -54,11 +54,14 @@
 .menu {
   background-color: #257a4b;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .menu-left {
-    width: 40%;
-    margin-left: 0;
-    object-fit: cover;
-}
+    width: 100%; 
+  }
+
+  .menu-left ul li {
+    width: 100%; 
+    padding: 15px 0;
+  }
 }
 </style>
