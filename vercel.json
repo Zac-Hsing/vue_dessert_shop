@@ -1,7 +1,7 @@
 {
     "rewrites": [
       {
-        "source": "/login",
+        "source": "/api/(.*)",
         "destination": "/server/index.js"
       }
     ]
