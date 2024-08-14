@@ -4,7 +4,9 @@ const cors = require('cors')
 
 const app = express()
 const PORT = process.env.PORT || 3000
-
+app.get('/api/login', (req, res) => {
+    res.send('伺服器正在運行');
+});
 const corsOptions = {
     origin: 'https://zac-hsing.github.io',
     optionsSuccessStatus: 200,
