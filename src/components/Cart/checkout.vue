@@ -41,7 +41,7 @@ function submitForm() {
 
 <style scoped>
 .left-main {
-  width: 1000px;
+  width: 60%;
   display: flex;
   justify-content: center;
 }
@@ -52,7 +52,7 @@ function submitForm() {
   height: 450px;
   padding: 20px;
   background-color: rgb(2, 141, 94);
-  margin: 10px;
+  margin: 10px 40px;
   margin-right: 60px;
   align-items: center;
 }
@@ -86,5 +86,14 @@ function submitForm() {
   text-align: center;
   margin-bottom: 15px;
 }
+@media (max-width: 1000px) {
+  .menu-left {
+    width: 100%; 
+  }
 
+  .menu-left ul li {
+    width: 100%; 
+    padding: 15px 0;
+  }
+}
 </style>

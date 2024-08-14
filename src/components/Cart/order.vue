@@ -37,6 +37,7 @@ function removeFromCart(item: any) {
 
 <style scoped>
 .right-main {
+  width: 35%;
   display: flex;
   flex-direction: column;
 }
@@ -103,20 +104,17 @@ function removeFromCart(item: any) {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .right-main {
-    margin: 10px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
   }
+
   .order, .cart {
-    width: 350px;
-  }
-  
-  .cart-item-image {
-    width: 80px;
-  }
-  
-  .item-detail p {
-    font-size: 14px;
+    width: 100%; 
+    max-width: 280px;
   }
 }
 </style>
