@@ -18,7 +18,7 @@
     }
      .main{
         width: 100vw; 
-        height: 80vh; 
+        height: 90vh; 
         max-width: 1500px; 
         max-height: 1100px; 
         border: 1px solid #ddd;
@@ -28,6 +28,7 @@
     .main {
         max-width: 2000px; 
         max-height: 1300px;  
+        height: 80vh; 
     }
     }
 </style>
