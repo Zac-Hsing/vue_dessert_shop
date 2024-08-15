@@ -20,7 +20,7 @@
         width: 100vw; 
         height: 80vh; 
         max-width: 1500px; 
-        max-height: 1000px; 
+        max-height: 1100px; 
         border: 1px solid #ddd;
         box-sizing: border-box; 
     } 
