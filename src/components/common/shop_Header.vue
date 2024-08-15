@@ -39,7 +39,7 @@ function scroll() {
 <style scoped>
 .header{
   margin: 0 auto;
-  width: 1160px;
+  width: 1050px;
   display: flex;
   padding: 20px 0;
 }

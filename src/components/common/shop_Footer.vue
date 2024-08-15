@@ -32,7 +32,7 @@
 
   .footer-contain {
     width: 100%; 
-    max-width: 1160px; 
+    max-width: 1050px; 
     display: flex;
     justify-content: space-between;
     align-items: center;

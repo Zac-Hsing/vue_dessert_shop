@@ -16,9 +16,18 @@
         align-items: center;
         margin: 0 auto;
     }
-    .main{
-        width: 1900px;
-        height: 1100px;
-        border: 1px solid #ddd
+     .main{
+        width: 100vw; 
+        height: 80vh; 
+        max-width: 1500px; 
+        max-height: 1000px; 
+        border: 1px solid #ddd;
+        box-sizing: border-box; 
+    } 
+    @media (min-width: 2500px) {
+    .main {
+        max-width: 2000px; 
+        max-height: 1200px;  
+    }
     }
 </style>

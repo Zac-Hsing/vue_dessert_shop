@@ -51,7 +51,7 @@
 }
 
 .list ul li a {
-    font-size: 35px;
+    font-size: 30px;
     color: #fff;
     text-decoration: none;
     display: block; 
@@ -72,13 +72,18 @@
     padding: 15px;
     font-size: 25px;
     cursor: pointer;
-    width: 200px;
+    width: 180px;
     border-radius: 5px;
     margin-bottom: 80px;
 }
 
 .logout-button:hover {
     background-color: darkred;
+}
+@media (max-width: 1300px) {
+    .logout-button{
+        width: 110px;
+    }
 }
 </style>
 

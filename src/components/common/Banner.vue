@@ -35,7 +35,7 @@
 <style scoped>
 
 .banner {
-  max-width: 1160px; /* 限制Banner最大寬度 */
+  max-width: 1050px; /* 限制Banner最大寬度 */
   margin: 0 auto; /* 使Banner居中對齊 */
   padding-bottom: 50px;
 }

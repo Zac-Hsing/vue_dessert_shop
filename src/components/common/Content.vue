@@ -13,7 +13,7 @@ import Dessert from './Dessert.vue';
 
 <style>
 .content{
-  width: 1160px;
+  width: 1050px;
   margin: 0 auto;
   padding-bottom: 40px;
   display: flex;

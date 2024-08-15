@@ -38,7 +38,7 @@
 
 .menu-left ul li a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #638e76;
   text-align: center;
   font-weight: bold;

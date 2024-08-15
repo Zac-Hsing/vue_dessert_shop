@@ -22,9 +22,7 @@
 </template>
 
 <style >
-@media (max-width: 900px) {
-  
-}
-  
+.home{
 
+}
 </style>
