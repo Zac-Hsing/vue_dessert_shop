@@ -3,12 +3,14 @@
         <div class="container">
             <h1>用戶登入</h1>
             <div class="acount">
+                <input type="text" style="display:none">
                 <input type="text" placeholder="帳號" v-model="form.username">
             </div>
             <div class="password">
-                <input type="password" placeholder="密碼" autocomplete="new-password" v-model="form.password">
+                <input type="text" style="display:none">
+                <input type="password" placeholder="密碼"v-model="form.password">
             </div>
-            <button @click="login">
+            <button @click.prevent="login">
                 登入
             </button>
         </div>   
@@ -19,8 +21,8 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 const User = {
-  username: 'admin',
-  password: '1234'
+  username: 'admintest',
+  password: 'a12345678'
 };
 const form = ref({
     username: '',
