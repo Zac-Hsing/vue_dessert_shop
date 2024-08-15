@@ -11,18 +11,22 @@
   import cart_main from '@/components/Cart/cart_main.vue';
 </script>
 <style>
+.cart {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh; 
+}
 .main {
-  height: auto;
+  flex: 1; 
+  padding: 20px; 
 }
 
-@media (min-height: 1300px) {
+@media (min-height: 1100px){
   .main{
-    min-height: 1443px;
+    height: auto;
   }
-}
-@media (max-height: 1300px){
-  .main{
-    height: 962px;
+  .footer{
+    margin-top: auto;
   }
 }
 </style>

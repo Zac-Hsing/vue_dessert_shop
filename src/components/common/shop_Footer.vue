@@ -62,11 +62,11 @@
 
   @media (max-width: 1000px) {
    .footer {
-      padding: 20px; /* 減少 padding 避免在小螢幕上占用過多空間 */
+      padding: 20px; 
     }
 
     .footer-contain {
-      flex-direction: column; /* 調整為垂直排列 */
+      flex-direction: column; 
       align-items: center;
       text-align: center;
     }
