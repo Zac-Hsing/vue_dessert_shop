@@ -12,8 +12,8 @@ interface Product {
 }
 
 export const useCartStore = defineStore('cart', () => {
-  const items = ref<Product[]>([]); // 購物車中的商品
-  const total = ref(0);  // 總價
+  const items = ref<Product[]>([]); 
+  const total = ref(0); 
 
   // 商品資料和類別
   const products = ref<Product[]>([

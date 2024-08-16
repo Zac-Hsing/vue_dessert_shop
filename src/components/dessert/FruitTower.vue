@@ -22,7 +22,7 @@ import { useToast } from 'vue-toast-notification';
 import '@/assets/dessert.css';
 const cartStore = useCartStore();
 
-// 篩選出類別為 'CheeseCake' 的商品
+
 const filteredItems = computed(() => 
   cartStore.products.filter((item:any) => item.category === 'FruitTower')
   .map((item:any) => {

@@ -105,16 +105,13 @@ function closeModal() {
 function update() {
   if (newProduct.value.id && newProduct.value.name && newProduct.value.price && newProduct.value.category && newProduct.value.description) {
     if (isEditing.value) {
-      // 修改現有商品
       const index = products.findIndex((product: { id: number; }) => product.id === newProduct.value.id);
       if (index !== -1) {
         products[index] = { ...newProduct.value };
       }
     } else {
-      // 添加新商品
       products.push({ ...newProduct.value });
     }
-
     resetNewProduct();
     showModal.value = false;
   } else {
