@@ -27,7 +27,7 @@
     width: 100%; 
     padding: 0 20px;
     justify-content: center; 
-    align-items: center; 
+    align-items: center;
   }
 
   .contianer > * {
