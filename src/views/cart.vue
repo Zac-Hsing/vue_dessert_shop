@@ -11,11 +11,4 @@
   import cart_main from '@/components/Cart/cart_main.vue';
 </script>
 <style>
-.main {
-  
-}
-
-@media (min-height: 1100px){
-  
-}
 </style>

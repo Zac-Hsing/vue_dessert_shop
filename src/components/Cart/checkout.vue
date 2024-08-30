@@ -44,7 +44,7 @@ function submitForm() {
   width: 60%;
   display: flex;
   justify-content: center;
-  height: 566px;  /*1*/ 
+  height: 566px;  
 }
 .left-main-content{
   display: flex;
@@ -94,19 +94,15 @@ function submitForm() {
   }
   @media (max-width: 1000px) {
   .left-main{
-    height: 840px;
+    height: 600px;
   }
   .menu-left {
     width: 100%; 
   }
-
   .menu-left ul li {
     width: 100%; 
     padding: 15px 0;
   }
-
 }
-
 }
-
   </style>
