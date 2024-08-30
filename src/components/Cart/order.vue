@@ -108,13 +108,13 @@ function removeFromCart(item: any) {
   .right-main {
     width: 100%; 
     display: flex;
-    flex-direction: column;
     align-items: center; 
   }
 
   .order, .cart {
     width: 100%; 
-    max-width: 280px;
+    max-width: 300px;
+    margin: 20px;
   }
 }
 </style>

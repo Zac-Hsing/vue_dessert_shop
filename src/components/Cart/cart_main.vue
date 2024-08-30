@@ -14,7 +14,7 @@
 
 <style scoped>
 .main {
-    min-height:75vh;
+    min-height:85vh;
 }
 .contianer {
   width: 1160px;
@@ -25,6 +25,10 @@
 }
 
 @media (max-width: 1000px) {
+  .main{
+    padding: 50px;
+    margin-bottom: 50px;
+  }
   .contianer{
     flex-direction: column; 
     width: 100%; 
