@@ -13,6 +13,9 @@
 </script>
 
 <style scoped>
+.main {
+    min-height:75vh;
+}
 .contianer {
   width: 1160px;
   display: flex;
